@@ -1,0 +1,15 @@
+# Chroma 向量数据库配置
+persist_dir: "data/vector_db"
+collection_name: "vehicle_repair_kb"
+
+# 文档分块
+chunk_size: 500
+chunk_overlap: 80
+
+# 检索
+top_k: 4
+score_threshold: 0.6
+
+# 重排序（开启后会对 top_k*2 个结果做 rerank）
+enable_rerank: true
+rerank_top_k: 3

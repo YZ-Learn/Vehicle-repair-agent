@@ -1,0 +1,10 @@
+# Agent 运行参数
+max_iterations: 8
+max_execution_time: 120  # 秒
+recursion_limit: 50
+
+# 会话
+session_expire_minutes: 60
+
+# 知识库目录（相对项目根）
+knowledge_dir: "knowledge"

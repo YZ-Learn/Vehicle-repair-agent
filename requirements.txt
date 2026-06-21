@@ -1,0 +1,15 @@
+# 核心依赖（经测试的版本组合）
+streamlit>=1.35.0
+chromadb==0.4.24
+sentence-transformers>=2.2.0
+openai>=1.68.0
+numpy==1.26.4
+
+# 工具
+pyyaml>=6.0
+sqlalchemy>=2.0
+
+# langchain（agent 目前已去依赖，保留供后续扩展）
+# langchain>=0.3.0
+# langchain-community>=0.3.0
+# langgraph>=0.2.0

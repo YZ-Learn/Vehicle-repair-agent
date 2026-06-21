@@ -1,0 +1,60 @@
+2026-06-21 17:24:44,727 | INFO    | repair_agent | [Model] Embedding: text-embedding-v3 via API
+2026-06-21 17:24:50,862 | INFO    | repair_agent | [VectorStore] collection=vehicle_repair_kb, dir=E:\AI\Agent通用\data/vector_db
+2026-06-21 17:24:50,866 | INFO    | repair_agent | [Ingest] 发现: 制动系统.md
+2026-06-21 17:24:50,867 | INFO    | repair_agent | [Ingest] 发现: 发动机系统.md
+2026-06-21 17:24:50,868 | INFO    | repair_agent | [Ingest] 发现: 变速箱系统.md
+2026-06-21 17:24:50,869 | INFO    | repair_agent | [Ingest] 发现: 底盘悬挂系统.md
+2026-06-21 17:24:50,869 | INFO    | repair_agent | [Ingest] 发现: 电气系统.md
+2026-06-21 17:24:50,870 | INFO    | repair_agent | [Ingest] 发现: 空调系统.md
+2026-06-21 17:24:50,871 | INFO    | repair_agent | [Ingest] 总计 49 个文档块
+2026-06-21 17:32:51,486 | INFO    | repair_agent | [Model] Embedding: text-embedding-v3 via API
+2026-06-21 17:35:05,768 | INFO    | repair_agent | [Model] Embedding: text-embedding-v3 via API
+2026-06-21 17:38:12,125 | INFO    | repair_agent | [Model] Embedding: text-embedding-v3 via API
+2026-06-21 17:39:34,659 | INFO    | repair_agent | [Model] Embedding: text-embedding-v3 via API
+2026-06-21 17:39:36,415 | INFO    | repair_agent | [VectorStore] collection=vehicle_repair_kb, dir=E:\AI\Agent通用\data/vector_db
+2026-06-21 17:39:36,422 | INFO    | repair_agent | [Ingest] 发现: 制动系统.md
+2026-06-21 17:39:36,423 | INFO    | repair_agent | [Ingest] 发现: 发动机系统.md
+2026-06-21 17:39:36,424 | INFO    | repair_agent | [Ingest] 发现: 变速箱系统.md
+2026-06-21 17:39:36,424 | INFO    | repair_agent | [Ingest] 发现: 底盘悬挂系统.md
+2026-06-21 17:39:36,425 | INFO    | repair_agent | [Ingest] 发现: 电气系统.md
+2026-06-21 17:39:36,426 | INFO    | repair_agent | [Ingest] 发现: 空调系统.md
+2026-06-21 17:39:36,427 | INFO    | repair_agent | [Ingest] 总计 49 个文档块
+2026-06-21 17:42:30,043 | INFO    | repair_agent | [Model] 本地 Embedding: BAAI/bge-small-zh-v1.5 on cpu
+2026-06-21 17:44:57,355 | INFO    | repair_agent | [Model] 本地 Embedding: BAAI/bge-small-zh-v1.5 on cpu
+2026-06-21 17:47:25,531 | INFO    | repair_agent | [Model] 本地 Embedding: BAAI/bge-small-zh-v1.5 on cpu
+2026-06-21 17:47:44,196 | INFO    | repair_agent | [VectorStore] collection=vehicle_repair_kb, dir=E:\AI\Agent通用\data/vector_db
+2026-06-21 17:47:44,203 | INFO    | repair_agent | [Ingest] 发现: 制动系统.md
+2026-06-21 17:47:44,204 | INFO    | repair_agent | [Ingest] 发现: 发动机系统.md
+2026-06-21 17:47:44,205 | INFO    | repair_agent | [Ingest] 发现: 变速箱系统.md
+2026-06-21 17:47:44,206 | INFO    | repair_agent | [Ingest] 发现: 底盘悬挂系统.md
+2026-06-21 17:47:44,207 | INFO    | repair_agent | [Ingest] 发现: 电气系统.md
+2026-06-21 17:47:44,208 | INFO    | repair_agent | [Ingest] 发现: 空调系统.md
+2026-06-21 17:47:44,209 | INFO    | repair_agent | [Ingest] 总计 49 个文档块
+2026-06-21 17:47:46,685 | INFO    | repair_agent | [VectorStore] 入库 49 个文档块
+2026-06-21 17:53:16,140 | INFO    | repair_agent | [Model] Chat: deepseek-chat via https://api.deepseek.com/v1
+2026-06-21 17:53:23,967 | INFO    | repair_agent | [Model] 本地 Embedding: BAAI/bge-small-zh-v1.5 on cpu
+2026-06-21 17:57:30,127 | INFO    | repair_agent | [Model] 本地 Embedding: BAAI/bge-small-zh-v1.5 on cpu
+2026-06-21 18:00:29,237 | INFO    | repair_agent | [Model] 本地 Embedding: BAAI/bge-small-zh-v1.5 on cpu
+2026-06-21 18:03:14,160 | INFO    | repair_agent | [Model] 本地 Embedding: BAAI/bge-small-zh-v1.5 on cpu
+2026-06-21 18:03:20,327 | INFO    | repair_agent | [VectorStore] collection=vehicle_repair_kb, dir=E:\AI\Agent通用\data/vector_db
+2026-06-21 18:03:20,334 | INFO    | repair_agent | [Ingest] 发现: 制动系统.md
+2026-06-21 18:03:20,335 | INFO    | repair_agent | [Ingest] 发现: 发动机系统.md
+2026-06-21 18:03:20,336 | INFO    | repair_agent | [Ingest] 发现: 变速箱系统.md
+2026-06-21 18:03:20,337 | INFO    | repair_agent | [Ingest] 发现: 底盘悬挂系统.md
+2026-06-21 18:03:20,337 | INFO    | repair_agent | [Ingest] 发现: 电气系统.md
+2026-06-21 18:03:20,339 | INFO    | repair_agent | [Ingest] 发现: 空调系统.md
+2026-06-21 18:03:20,340 | INFO    | repair_agent | [Ingest] 总计 49 个文档块
+2026-06-21 18:03:22,621 | INFO    | repair_agent | [VectorStore] 入库 49 个文档块
+2026-06-21 18:04:24,324 | INFO    | repair_agent | [Model] Chat: deepseek-chat via https://api.deepseek.com/v1
+2026-06-21 18:04:32,458 | INFO    | repair_agent | [Model] 本地 Embedding: BAAI/bge-small-zh-v1.5 on cpu
+2026-06-21 18:04:39,128 | INFO    | repair_agent | [VectorStore] collection=vehicle_repair_kb, dir=E:\AI\Agent通用\data/vector_db
+2026-06-21 18:04:39,130 | INFO    | repair_agent | [Agent] 初始化完成 | tools=5 | max_iter=8
+2026-06-21 18:05:33,480 | DEBUG   | repair_agent | [RAG] query改写: 加油时加满了但是仪表盘显示并没有加满 → 加油加满 仪表盘 显示 未满 故障
+2026-06-21 18:05:33,569 | WARNING | repair_agent | [RAG] 未检索到相关内容
+2026-06-21 18:05:40,490 | INFO    | repair_agent | [Agent] Iter 0: 最终回答完成
+2026-06-21 18:05:57,663 | DEBUG   | repair_agent | [DB] 保存对话记录 #1
+2026-06-21 18:08:40,550 | INFO    | repair_agent | [DB] 反馈 #1 → 评分 5
+2026-06-21 18:12:14,780 | INFO    | repair_agent | [Model] Chat: deepseek-chat via https://api.deepseek.com/v1
+2026-06-21 18:12:25,629 | INFO    | repair_agent | [Model] 本地 Embedding: BAAI/bge-small-zh-v1.5 on cpu
+2026-06-21 18:12:42,473 | INFO    | repair_agent | [VectorStore] collection=vehicle_repair_kb, dir=E:\AI\Agent通用\data/vector_db
+2026-06-21 18:12:42,475 | INFO    | repair_agent | [Agent] 初始化完成 | tools=5 | max_iter=8

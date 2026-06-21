@@ -1,0 +1,30 @@
+# 模型配置 — 工厂模式，改这里换模型全家桶
+# 支持的 provider: openai_compatible | dashscope | zhipu
+#
+# API Key 优先级：环境变量 > YAML
+#   openai_compatible → 环境变量 DEEPSEEK_API_KEY
+#   dashscope        → 环境变量 DASHSCOPE_API_KEY
+# 在 Streamlit Cloud 部署时，在 Secrets 中设置 DEEPSEEK_API_KEY 即可
+
+provider: openai_compatible
+
+openai_compatible:
+  base_url: "https://api.deepseek.com/v1"
+  api_key: "sk-your-key-here"          # 本地开发用，云上部署设环境变量
+  chat_model: "deepseek-chat"
+  embedding_model: "BAAI/bge-small-zh-v1.5"   # 本地模型
+  temperature: 0.3
+  max_tokens: 4096
+
+# dashscope 配置（通义千问）
+dashscope:
+  api_key: "sk-your-key-here"
+  chat_model: "qwen-max"
+  embedding_model: "text-embedding-v2"
+  temperature: 0.3
+  max_tokens: 4096
+
+# 本地 embedding 模型路径（当 embedding_model 指向本地时）
+local_embedding:
+  model_name: "BAAI/bge-small-zh-v1.5"
+  device: "cpu"  # cpu | cuda
