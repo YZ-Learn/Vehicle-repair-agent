@@ -1,4 +1,2 @@
-# Streamlit Cloud 系统级依赖
-# ChromaDB 需要这些库
 libgomp1
 build-essential
