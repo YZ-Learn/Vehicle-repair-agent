@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>车辆维修智能助手 · 项目展示</title>
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+    background: #f7f8fa;
+    color: #1e293b;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .video-hero {
+    background: #fff;
+    padding: 32px 24px 24px;
+    border-bottom: 1px solid #e8eaed;
+  }
+  .video-hero video {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    background: #000;
+    outline: none;
+  }
+  .video-hero .video-label {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #888;
+    letter-spacing: 0.5px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .project-header {
+    padding: 48px 0 40px;
+    text-align: center;
+  }
+  .project-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: 1px;
+  }
+  .project-header .subtitle {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #64748b;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  .project-header .tags {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  .project-header .tags span {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    background: #f1f4f9;
+    color: #475569;
+    letter-spacing: 0.3px;
+  }
+
+  section { padding: 40px 0; }
+  section + section { border-top: 1px solid #e8eaed; }
+  section h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  .arch-layers {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid #e2e6ec;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .arch-layer {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #eef0f4;
+    font-size: 14px;
+  }
+  .arch-layer:last-child { border-bottom: none; }
+  .arch-layer .label {
+    flex-shrink: 0;
+    width: 80px;
+    font-weight: 600;
+    color: #0f172a;
+  }
+  .arch-layer .desc { color: #475569; line-height: 1.5; }
+  .arch-layer .desc em { color: #2563eb; font-style: normal; font-weight: 500; }
+  .arch-flow {
+    margin-top: 24px;
+    padding: 16px 20px;
+    background: #fff;
+    border: 1px solid #e2e6ec;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.8;
+  }
+  .arch-flow .arrow { color: #94a3b8; margin: 0 4px; }
+
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+  }
+  .tool-card {
+    background: #fff;
+    border: 1px solid #e2e6ec;
+    border-radius: 8px;
+    padding: 16px 18px;
+  }
+  .tool-card .tool-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a;
+    font-family: "SF Mono", "Consolas", "Monaco", monospace;
+  }
+  .tool-card .tool-desc {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+  }
+  .tool-card .tool-params {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #94a3b8;
+    font-family: "SF Mono", "Consolas", "Monaco", monospace;
+  }
+
+  .highlights-list {
+    list-style: none;
+    padding: 0;
+  }
+  .highlights-list li {
+    position: relative;
+    padding: 10px 0 10px 18px;
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.6;
+  }
+  .highlights-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #2563eb;
+  }
+  .highlights-list li strong { color: #0f172a; }
+
+  .kb-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .kb-list span {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #fff;
+    border: 1px solid #e2e6ec;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #475569;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 13px;
+    color: #94a3b8;
+    border-top: 1px solid #e8eaed;
+    margin-top: 8px;
+  }
+  footer a { color: #2563eb; text-decoration: none; font-weight: 500; }
+
+  @media (max-width: 600px) {
+    .project-header { padding: 32px 0 28px; }
+    .project-header h1 { font-size: 22px; }
+    .project-header .subtitle { font-size: 14px; }
+    section { padding: 28px 0; }
+    section h2 { font-size: 18px; }
+    .arch-layer { flex-direction: column; align-items: flex-start; gap: 4px; padding: 12px 16px; }
+    .arch-layer .label { width: auto; font-size: 13px; }
+    .arch-layer .desc { font-size: 13px; }
+    .tools-grid { grid-template-columns: 1fr; }
+    .video-hero { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ Video ═══ -->
+<div class="video-hero">
+  <video controls muted playsinline preload="metadata" poster="">
+    <source src="./车辆维护助手.mp4" type="video/mp4">
+    您的浏览器不支持视频播放。
+  </video>
+  <div class="video-label">▶ 车辆维修智能助手 · 演示视频</div>
+</div>
+
+<!-- ═══ Header ═══ -->
+<div class="container">
+  <header class="project-header">
+    <h1>车辆维修智能助手</h1>
+    <p class="subtitle">
+      面向维修工程师的 AI 助手——输入故障现象或故障码，自动检索知识库、调用工具，输出诊断建议与维修方案。
+    </p>
+    <div class="tags">
+      <span>LangGraph</span>
+      <span>DeepSeek</span>
+      <span>RAG</span>
+      <span>Chroma</span>
+      <span>Streamlit</span>
+      <span>SQLite</span>
+    </div>
+  </header>
+</div>
+
+<!-- ═══ Architecture ═══ -->
+<div class="container">
+  <section>
+    <h2>整体架构</h2>
+    <div class="arch-layers">
+      <div class="arch-layer">
+        <span class="label">前端</span>
+        <span class="desc">Streamlit 聊天界面 · 实时流式输出 · 历史记录 · 用户反馈</span>
+      </div>
+      <div class="arch-layer">
+        <span class="label">Agent</span>
+        <span class="desc">自研轻量多步推理引擎 · 解析意图 → 检索 → 调工具 → 综合回答 · 最大 <em>8 步迭代</em></span>
+      </div>
+      <div class="arch-layer">
+        <span class="label">工具层</span>
+        <span class="desc">5 个注册工具 · JSON Schema 描述 · LLM 自动判断调用时机</span>
+      </div>
+      <div class="arch-layer">
+        <span class="label">RAG</span>
+        <span class="desc">Chroma 向量库 · Query 改写 + Rerank 重排序 · 双通道检索增强</span>
+      </div>
+      <div class="arch-layer">
+        <span class="label">模型层</span>
+        <span class="desc">抽象工厂模式 · YAML 配置驱动 · 支持 DeepSeek / 通义千问 / 本地 Embedding 无感切换</span>
+      </div>
+      <div class="arch-layer">
+        <span class="label">存储</span>
+        <span class="desc">SQLite 对话持久化 · 记录 Token 用量 / 工具调用链 / 参考文档</span>
+      </div>
+    </div>
+    <div class="arch-flow">
+      <strong>工作流程：</strong>
+      用户提问
+      <span class="arrow">→</span> RAG 检索知识库
+      <span class="arrow">→</span> Agent 分析意图
+      <span class="arrow">→</span> 调用工具（故障码 / 配件 / 工时）
+      <span class="arrow">→</span> 综合知识库 + 工具结果
+      <span class="arrow">→</span> 流式输出回答
+    </div>
+  </section>
+</div>
+
+<!-- ═══ Tools ═══ -->
+<div class="container">
+  <section>
+    <h2>工具集</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="tool-name">search_trouble_code</div>
+        <div class="tool-desc">查询故障码（DTC）含义与诊断建议</div>
+        <div class="tool-params">参数: code (str)</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">search_part_info</div>
+        <div class="tool-desc">查配件 OE 号、价格区间、常见故障</div>
+        <div class="tool-params">参数: part_name (str)</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">get_safety_warning</div>
+        <div class="tool-desc">获取特定维修操作的安全警告</div>
+        <div class="tool-params">参数: operation (str)</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">estimate_repair_time</div>
+        <div class="tool-desc">工时估算（按维修项目 + 车型）</div>
+        <div class="tool-params">参数: repair_item, vehicle_type</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">get_current_time</div>
+        <div class="tool-desc">获取当前日期时间</div>
+        <div class="tool-params">参数: 无</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══ Knowledge Base ═══ -->
+<div class="container">
+  <section>
+    <h2>知识库</h2>
+    <p style="font-size:14px;color:#64748b;margin-bottom:16px;">6 篇车辆维修文档，覆盖核心系统</p>
+    <div class="kb-list">
+      <span>发动机系统</span>
+      <span>制动系统</span>
+      <span>电气系统</span>
+      <span>变速箱系统</span>
+      <span>空调系统</span>
+      <span>底盘悬挂系统</span>
+    </div>
+    <p style="margin-top:16px;font-size:13px;color:#94a3b8;">
+      每篇按「故障现象 → 可能原因 → 诊断步骤 → 维修建议」结构化组织 · 即改即用，无需改代码
+    </p>
+  </section>
+</div>
+
+<!-- ═══ Highlights ═══ -->
+<div class="container">
+  <section>
+    <h2>设计亮点</h2>
+    <ul class="highlights-list">
+      <li>
+        <strong>自研 Agent 引擎</strong> — 不依赖 LangChain 框架，轻量可控。ReAct 风格多步推理，最大 8 步迭代，错误自动兜底。
+      </li>
+      <li>
+        <strong>双通道检索增强</strong> — Query 改写 + Rerank 重排序，知识召回精度明显优于直接向量检索。
+      </li>
+      <li>
+        <strong>抽象模型工厂</strong> — YAML 一键切换模型提供商（DeepSeek / 通义千问），支持本地 Embedding 离线运行。
+      </li>
+      <li>
+        <strong>@tool 装饰器注册</strong> — 新增工具只需一个装饰器 + 一个函数，自动生成 OpenAI 兼容的 JSON Schema。
+      </li>
+      <li>
+        <strong>全链路可观测</strong> — 每次对话记录：Token 用量、工具调用链、参考文档、用户反馈，数据不丢。
+      </li>
+      <li>
+        <strong>零配置扩展</strong> — 换行业只需替换 knowledge/ 目录 + 改工具名，无需修改框架代码。
+      </li>
+    </ul>
+  </section>
+</div>
+
+<footer>
+  <a href="https://github.com/YZ-Learn/Vehicle-repair-agent">GitHub 仓库</a>
+  &nbsp;·&nbsp; 杨卓 · 2026
+</footer>
+
+</body>
+</html>
